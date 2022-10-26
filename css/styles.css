@@ -55,12 +55,15 @@ body {
     margin-left: auto;
     margin-right: auto;
 
-    outline: 2px solid red;
+    outline: 2px solid teal;
     outline-offset: -2px;
 }
 
 .section {
     padding: 94px 0;
+
+    outline: 2px solid red;
+    outline-offset: -2px;
 }
 
 .button {
@@ -108,6 +111,7 @@ body {
 
 .header {
     border-bottom: 1px solid #ECECEC;
+    padding: 24px 0 25px 0;
 }
 .site-nav .link{
     color: var(--secondary-color);
@@ -189,6 +193,8 @@ body {
 .features-title,
 .activities-title,
 .team-title {
+margin-bottom: 50px;
+
 color: var(--secondary-color);
 
 font-weight: 700;
@@ -223,7 +229,24 @@ text-align: center;
 
 /* Our team */
 
+.team.section {
+    background-color: #F5F4FA;
+}
+
+/* .team-card {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+                0px 1px 1px rgba(0, 0, 0, 0.14), 
+                0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+} */
+
+.team-img {
+    margin-bottom: 30px;
+}
+
 .team-subtitle {
+    margin-bottom: 10px;
+
     color: var(--secondary-color);
 
     font-weight: 500;
@@ -236,6 +259,16 @@ text-align: center;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
+}
+
+/* footer */
+
+.footer {
+    padding: 60px 0;
+}
+
+.footer-logo {
+    margin-bottom: 20px;
 }
 
 /* address */
@@ -251,6 +284,10 @@ text-align: center;
     color: var(--logo-secondary-color);
 }
 
+.address-item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
 /* Portfolio */
 
 .portfolio-title {
@@ -262,7 +299,13 @@ text-align: center;
     text-align: center;
 }
 
+.potfolio-img {
+    margin-bottom: 20px;
+}
+
 .portfolio-subtitle {
+    margin-bottom: 4px;
+
     color: var(--secondary-color);
 
     font-weight: 700;
@@ -281,6 +324,10 @@ text-align: center;
 /* Portfolio - buttons */
 
 .portfolio-btn {
+    padding: 6px 22px;
+    min-height: 38px;
+    min-width: 73px;
+
     color: var(--secondary-color);
     background-color: var(--portfolio-btn-background-color);
 
