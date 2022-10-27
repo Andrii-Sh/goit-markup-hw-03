@@ -115,7 +115,11 @@ body {
     align-items: center;
 }
 
-.site-nav-list {
+.header .logo {
+    margin-right: 93px;
+}
+
+.site-nav {
     display: flex;
     /* margin-right: 50px; */
 }
@@ -125,8 +129,8 @@ body {
     margin-left: auto;
 }
 
-.header .logo {
-    margin-right: 93px;
+.site-nav-list {
+    display: flex;
 }
 
 .site-nav-item:not(:last-child), 
