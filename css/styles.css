@@ -141,7 +141,8 @@ body {
 }
 
 .header .link {
-    padding: 24px 0 25px 0;
+    /* 1 px для нижнього паддінга додається рамкою хедера */
+    padding: 24px 0 24px 0; 
 }
 
 .site-nav .link{
