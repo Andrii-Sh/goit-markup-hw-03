@@ -26,6 +26,7 @@ h1, h2, h3, h4, h5, h6, p {
 .link {
     text-decoration: none;
     color: currentColor;
+    display: block;
 }
 
 .list {
@@ -109,10 +110,40 @@ body {
 
 /* Header */
 
+.header > .container {
+    display: flex;
+    align-items: center;
+}
+
+.site-nav-list {
+    display: flex;
+    /* margin-right: 50px; */
+}
+
+.auth-nav {
+    display: flex;
+    margin-left: auto;
+}
+
+.header .logo {
+    margin-right: 93px;
+}
+
+.site-nav-item:not(:last-child), 
+.auth-nav-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+
 .header {
     border-bottom: 1px solid #ECECEC;
+    /* padding: 24px 0 25px 0; */
+}
+
+.header .link {
     padding: 24px 0 25px 0;
 }
+
 .site-nav .link{
     color: var(--secondary-color);
 
@@ -151,6 +182,7 @@ body {
 
 .hero.section {
     padding: 200px 0;
+    text-align: center;
 }
 
 .hero-title {
@@ -161,7 +193,6 @@ body {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
@@ -276,12 +307,16 @@ text-align: center;
 .address .link {
     color: var(--address-footer-color); 
 
-    font-style: normal;  
+    font-style: normal;
 }
 
 .address .link:hover,
 .address .link:focus {
     color: var(--logo-secondary-color);
+}
+
+.address-item {
+    line-height: 1.5;
 }
 
 .address-item:not(:last-child) {
